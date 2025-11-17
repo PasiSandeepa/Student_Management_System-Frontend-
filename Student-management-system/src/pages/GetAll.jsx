@@ -6,7 +6,7 @@ function Read() {
 
   const loadStudents = () => {
     axios
-      .get("http://localhost:8080/getAll")
+      .get("http://localhost:8080/student/getAll")
       .then((res) => {
         setStudents(res.data);
       })

@@ -7,6 +7,8 @@ import Create from "./pages/Create";
 import Delete from "./pages/Delete";
 import Update from "./pages/Update";
 import GetAll from "./pages/GetAll"
+import Home from "./pages/Home";
+import './App.css'; 
 
 
 
@@ -20,6 +22,7 @@ function App() {
     <NavBar />
     <h1>Student Management System</h1>
     <Routes>
+         <Route path ="/" element={<Home />} />
       <Route path="/create" element={<Create />} />
       <Route path="/getAll" element={<GetAll />} />
       <Route path="/update" element={<Update />} />
